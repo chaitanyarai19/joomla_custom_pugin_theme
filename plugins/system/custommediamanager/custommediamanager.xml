@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="4.0">
+    <name>Custom Media Manager</name>
+    <author>Your Name</author>
+    <creationDate>2025</creationDate>
+    <version>1.0.0</version>
+    <description>Restricts file types in Joomla's Media Manager.</description>
+    <files>
+        <filename plugin="custommediamanager">custommediamanager.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="allowed_extensions" type="text"
+                       label="Allowed File Extensions"
+                       description="Comma-separated list of allowed file types."/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
