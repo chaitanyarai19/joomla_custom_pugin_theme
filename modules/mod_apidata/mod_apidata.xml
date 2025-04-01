@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site">
+    <name>API Data Module</name>
+    <version>1.0.0</version>
+    <description>Fetches data from a public API and displays it.</description>
+    <author>Your Name</author>
+    <creationDate>2025</creationDate>
+    <files>
+        <filename module="mod_apidata">mod_apidata.php</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="api_url"
+                    type="text"
+                    label="API URL"
+                    description="Enter the API endpoint URL"
+                    default="https://jsonplaceholder.typicode.com/posts"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
